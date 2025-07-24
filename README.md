@@ -1,1 +1,1 @@
-# OOP_MANAGER
+# SedapMakan Management System C#-OOP
