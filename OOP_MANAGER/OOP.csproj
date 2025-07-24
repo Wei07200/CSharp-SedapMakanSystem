@@ -62,13 +62,101 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Customer.cs">
+    <Compile Include="Admin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Customer.Designer.cs">
-      <DependentUpon>Customer.cs</DependentUpon>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FeedbackManager.cs" />
+    <Compile Include="AdminProfile.cs" />
+    <Compile Include="AdminReportRepository.cs" />
+    <Compile Include="AdminSession.cs" />
+    <Compile Include="Chef_Role\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chef_Role\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chef_Role\MainClass.cs" />
+    <Compile Include="Chef_Role\MenuManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chef_Role\MenuManagement.Designer.cs">
+      <DependentUpon>MenuManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chef_Role\MenuManagementClass.cs" />
+    <Compile Include="Chef_Role\menu_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chef_Role\menu_add.Designer.cs">
+      <DependentUpon>menu_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chef_Role\orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chef_Role\orders.Designer.cs">
+      <DependentUpon>orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chef_Role\OrdersClass.cs" />
+    <Compile Include="Chef_Role\order_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chef_Role\order_details.Designer.cs">
+      <DependentUpon>order_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chef_Role\update_profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chef_Role\update_profile.Designer.cs">
+      <DependentUpon>update_profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chef_Role\User.cs" />
+    <Compile Include="CustomerMenuClass.cs" />
+    <Compile Include="CustomerOrdersClass.cs" />
+    <Compile Include="CustomerProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerProfile.Designer.cs">
+      <DependentUpon>CustomerProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerViewRefund.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerViewRefund.Designer.cs">
+      <DependentUpon>CustomerViewRefund.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerDashboard.Designer.cs">
+      <DependentUpon>CustomerDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerFeedback.Designer.cs">
+      <DependentUpon>CustomerFeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerMenu.Designer.cs">
+      <DependentUpon>CustomerMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerRefund.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerRefund.Designer.cs">
+      <DependentUpon>CustomerRefund.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerTopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerTopUp.Designer.cs">
+      <DependentUpon>CustomerTopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cus-Refund.cs" />
+    <Compile Include="Manager-Feedback.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,13 +169,42 @@
     <Compile Include="Manager.Designer.cs">
       <DependentUpon>Manager.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manager-ManageRefund.cs" />
+    <Compile Include="MyOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyOrders.Designer.cs">
+      <DependentUpon>MyOrders.cs</DependentUpon>
+    </Compile>
     <Compile Include="OOPDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>OOPDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="OOPDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OOPDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OOPDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OOPDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OOPDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OOPDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OOPDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OOPDataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Profile.cs" />
+    <Compile Include="Cus-SendFeedback.cs" />
     <Compile Include="Session.cs" />
+    <Compile Include="Manager-Topup.cs" />
     <Compile Include="UpdateProfile.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -97,14 +214,63 @@
     <Compile Include="RoundedPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <EmbeddedResource Include="Customer.resx">
-      <DependentUpon>Customer.cs</DependentUpon>
+    <Compile Include="CustomerviewOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerviewOrder.Designer.cs">
+      <DependentUpon>CustomerviewOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateProfileAdmin.cs" />
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chef_Role\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chef_Role\MenuManagement.resx">
+      <DependentUpon>MenuManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chef_Role\menu_add.resx">
+      <DependentUpon>menu_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chef_Role\orders.resx">
+      <DependentUpon>orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chef_Role\order_details.resx">
+      <DependentUpon>order_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chef_Role\update_profile.resx">
+      <DependentUpon>update_profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerProfile.resx">
+      <DependentUpon>CustomerProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerViewRefund.resx">
+      <DependentUpon>CustomerViewRefund.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerDashboard.resx">
+      <DependentUpon>CustomerDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerFeedback.resx">
+      <DependentUpon>CustomerFeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerMenu.resx">
+      <DependentUpon>CustomerMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerRefund.resx">
+      <DependentUpon>CustomerRefund.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerTopUp.resx">
+      <DependentUpon>CustomerTopUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manager.resx">
       <DependentUpon>Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyOrders.resx">
+      <DependentUpon>MyOrders.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -116,6 +282,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="CustomerviewOrder.resx">
+      <DependentUpon>CustomerviewOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="OOPDataSet.xsc">
       <DependentUpon>OOPDataSet.xsd</DependentUpon>
     </None>
@@ -126,6 +295,50 @@
     </None>
     <None Include="OOPDataSet.xss">
       <DependentUpon>OOPDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OOPDataSet1.xsc">
+      <DependentUpon>OOPDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="OOPDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OOPDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OOPDataSet1.xss">
+      <DependentUpon>OOPDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="OOPDataSet2.xsc">
+      <DependentUpon>OOPDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="OOPDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OOPDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OOPDataSet2.xss">
+      <DependentUpon>OOPDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="OOPDataSet3.xsc">
+      <DependentUpon>OOPDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="OOPDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OOPDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OOPDataSet3.xss">
+      <DependentUpon>OOPDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="OOPDataSet4.xsc">
+      <DependentUpon>OOPDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="OOPDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OOPDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OOPDataSet4.xss">
+      <DependentUpon>OOPDataSet4.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -215,5 +428,83 @@
   <ItemGroup>
     <None Include="Resources\filter.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAdd.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo for buttons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MenuItemsImages\BeefSteak.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuItemsImages\Broc.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuItemsImages\ChickenChop.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuItemsImages\ChickenPie.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuItemsImages\Default.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuItemsImages\FAlfre.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuItemsImages\FishChips.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuItemsImages\FriedRice.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuItemsImages\Laksa.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuItemsImages\Lasag.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuItemsImages\LemonTea.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuItemsImages\LettuceWrap.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuItemsImages\NasiAyamGepuk.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuItemsImages\NasiLemak.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuItemsImages\OJuice.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuItemsImages\Pizza.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuItemsImages\PumpSoup.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuItemsImages\RoastLamb.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuItemsImages\SCarbo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuItemsImages\Spanish.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuItemsImages\TehTarik.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuItemsImages\TofuSalad.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuItemsImages\WJuice.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

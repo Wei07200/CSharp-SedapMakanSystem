@@ -30,17 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmlogin));
             this.sidebar = new System.Windows.Forms.Panel();
-            this.pillButton01 = new OOP.PillButton();
             this.button8 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.roles = new System.Windows.Forms.Panel();
-            this.pillButton6 = new OOP.PillButton();
-            this.pillButton5 = new OOP.PillButton();
-            this.pillButton4 = new OOP.PillButton();
-            this.pillButton3 = new OOP.PillButton();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -48,7 +43,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.login = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
-            this.pillButton02 = new OOP.PillButton();
             this.Username = new System.Windows.Forms.GroupBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -81,6 +75,12 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pillButton01 = new OOP.PillButton();
+            this.pillButton02 = new OOP.PillButton();
+            this.pillButton6 = new OOP.PillButton();
+            this.pillButton5 = new OOP.PillButton();
+            this.pillButton4 = new OOP.PillButton();
+            this.pillButton3 = new OOP.PillButton();
             this.sidebar.SuspendLayout();
             this.roles.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -118,22 +118,6 @@
             this.sidebar.Size = new System.Drawing.Size(1280, 126);
             this.sidebar.TabIndex = 0;
             this.sidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.sidebar_Paint);
-            // 
-            // pillButton01
-            // 
-            this.pillButton01.BackColor = System.Drawing.Color.White;
-            this.pillButton01.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pillButton01.FlatAppearance.BorderSize = 0;
-            this.pillButton01.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pillButton01.Font = new System.Drawing.Font("Nirmala Text", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pillButton01.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(63)))), ((int)(((byte)(115)))));
-            this.pillButton01.Location = new System.Drawing.Point(1041, 54);
-            this.pillButton01.Name = "pillButton01";
-            this.pillButton01.Size = new System.Drawing.Size(124, 40);
-            this.pillButton01.TabIndex = 8;
-            this.pillButton01.Text = "Login";
-            this.pillButton01.UseVisualStyleBackColor = false;
-            this.pillButton01.Click += new System.EventHandler(this.pillButton2_Click);
             // 
             // button8
             // 
@@ -224,63 +208,6 @@
             this.roles.Size = new System.Drawing.Size(1280, 689);
             this.roles.TabIndex = 7;
             // 
-            // pillButton6
-            // 
-            this.pillButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(236)))), ((int)(((byte)(206)))));
-            this.pillButton6.FlatAppearance.BorderSize = 0;
-            this.pillButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pillButton6.Font = new System.Drawing.Font("Nirmala Text", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pillButton6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(63)))), ((int)(((byte)(115)))));
-            this.pillButton6.Location = new System.Drawing.Point(501, 580);
-            this.pillButton6.Name = "pillButton6";
-            this.pillButton6.Size = new System.Drawing.Size(251, 49);
-            this.pillButton6.TabIndex = 16;
-            this.pillButton6.Text = "Customer";
-            this.pillButton6.UseVisualStyleBackColor = false;
-            // 
-            // pillButton5
-            // 
-            this.pillButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(236)))), ((int)(((byte)(206)))));
-            this.pillButton5.FlatAppearance.BorderSize = 0;
-            this.pillButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pillButton5.Font = new System.Drawing.Font("Nirmala Text", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pillButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(63)))), ((int)(((byte)(115)))));
-            this.pillButton5.Location = new System.Drawing.Point(133, 580);
-            this.pillButton5.Name = "pillButton5";
-            this.pillButton5.Size = new System.Drawing.Size(251, 49);
-            this.pillButton5.TabIndex = 15;
-            this.pillButton5.Text = "Chef";
-            this.pillButton5.UseVisualStyleBackColor = false;
-            // 
-            // pillButton4
-            // 
-            this.pillButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(236)))), ((int)(((byte)(206)))));
-            this.pillButton4.FlatAppearance.BorderSize = 0;
-            this.pillButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pillButton4.Font = new System.Drawing.Font("Nirmala Text", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pillButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(63)))), ((int)(((byte)(115)))));
-            this.pillButton4.Location = new System.Drawing.Point(501, 274);
-            this.pillButton4.Name = "pillButton4";
-            this.pillButton4.Size = new System.Drawing.Size(251, 49);
-            this.pillButton4.TabIndex = 14;
-            this.pillButton4.Text = "Manager";
-            this.pillButton4.UseVisualStyleBackColor = false;
-            // 
-            // pillButton3
-            // 
-            this.pillButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(236)))), ((int)(((byte)(206)))));
-            this.pillButton3.FlatAppearance.BorderSize = 0;
-            this.pillButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pillButton3.Font = new System.Drawing.Font("Nirmala Text", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pillButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(63)))), ((int)(((byte)(115)))));
-            this.pillButton3.Location = new System.Drawing.Point(133, 271);
-            this.pillButton3.Name = "pillButton3";
-            this.pillButton3.Size = new System.Drawing.Size(251, 49);
-            this.pillButton3.TabIndex = 13;
-            this.pillButton3.Text = "System Admin";
-            this.pillButton3.UseVisualStyleBackColor = false;
-            this.pillButton3.Click += new System.EventHandler(this.pillButton3_Click);
-            // 
             // pictureBox8
             // 
             this.pictureBox8.Image = global::OOP.Properties.Resources.customer;
@@ -363,22 +290,6 @@
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
-            // pillButton02
-            // 
-            this.pillButton02.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(63)))), ((int)(((byte)(115)))));
-            this.pillButton02.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pillButton02.FlatAppearance.BorderSize = 0;
-            this.pillButton02.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pillButton02.Font = new System.Drawing.Font("Nirmala Text", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pillButton02.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.pillButton02.Location = new System.Drawing.Point(162, 564);
-            this.pillButton02.Name = "pillButton02";
-            this.pillButton02.Size = new System.Drawing.Size(358, 52);
-            this.pillButton02.TabIndex = 5;
-            this.pillButton02.Text = "Login";
-            this.pillButton02.UseVisualStyleBackColor = false;
-            this.pillButton02.Click += new System.EventHandler(this.pillButton02_Click);
-            // 
             // Username
             // 
             this.Username.BackColor = System.Drawing.Color.Transparent;
@@ -448,6 +359,7 @@
             this.button2.Size = new System.Drawing.Size(53, 33);
             this.button2.TabIndex = 2;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox4
             // 
@@ -752,6 +664,95 @@
             this.pictureBox9.TabIndex = 0;
             this.pictureBox9.TabStop = false;
             // 
+            // pillButton01
+            // 
+            this.pillButton01.BackColor = System.Drawing.Color.White;
+            this.pillButton01.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pillButton01.FlatAppearance.BorderSize = 0;
+            this.pillButton01.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pillButton01.Font = new System.Drawing.Font("Nirmala Text", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pillButton01.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(63)))), ((int)(((byte)(115)))));
+            this.pillButton01.Location = new System.Drawing.Point(1041, 54);
+            this.pillButton01.Name = "pillButton01";
+            this.pillButton01.Size = new System.Drawing.Size(124, 40);
+            this.pillButton01.TabIndex = 8;
+            this.pillButton01.Text = "Login";
+            this.pillButton01.UseVisualStyleBackColor = false;
+            this.pillButton01.Click += new System.EventHandler(this.pillButton2_Click);
+            // 
+            // pillButton02
+            // 
+            this.pillButton02.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(63)))), ((int)(((byte)(115)))));
+            this.pillButton02.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pillButton02.FlatAppearance.BorderSize = 0;
+            this.pillButton02.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pillButton02.Font = new System.Drawing.Font("Nirmala Text", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pillButton02.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.pillButton02.Location = new System.Drawing.Point(162, 564);
+            this.pillButton02.Name = "pillButton02";
+            this.pillButton02.Size = new System.Drawing.Size(358, 52);
+            this.pillButton02.TabIndex = 5;
+            this.pillButton02.Text = "Login";
+            this.pillButton02.UseVisualStyleBackColor = false;
+            this.pillButton02.Click += new System.EventHandler(this.pillButton02_Click);
+            // 
+            // pillButton6
+            // 
+            this.pillButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(236)))), ((int)(((byte)(206)))));
+            this.pillButton6.FlatAppearance.BorderSize = 0;
+            this.pillButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pillButton6.Font = new System.Drawing.Font("Nirmala Text", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pillButton6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(63)))), ((int)(((byte)(115)))));
+            this.pillButton6.Location = new System.Drawing.Point(501, 580);
+            this.pillButton6.Name = "pillButton6";
+            this.pillButton6.Size = new System.Drawing.Size(251, 49);
+            this.pillButton6.TabIndex = 16;
+            this.pillButton6.Text = "Customer";
+            this.pillButton6.UseVisualStyleBackColor = false;
+            // 
+            // pillButton5
+            // 
+            this.pillButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(236)))), ((int)(((byte)(206)))));
+            this.pillButton5.FlatAppearance.BorderSize = 0;
+            this.pillButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pillButton5.Font = new System.Drawing.Font("Nirmala Text", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pillButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(63)))), ((int)(((byte)(115)))));
+            this.pillButton5.Location = new System.Drawing.Point(133, 580);
+            this.pillButton5.Name = "pillButton5";
+            this.pillButton5.Size = new System.Drawing.Size(251, 49);
+            this.pillButton5.TabIndex = 15;
+            this.pillButton5.Text = "Chef";
+            this.pillButton5.UseVisualStyleBackColor = false;
+            // 
+            // pillButton4
+            // 
+            this.pillButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(236)))), ((int)(((byte)(206)))));
+            this.pillButton4.FlatAppearance.BorderSize = 0;
+            this.pillButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pillButton4.Font = new System.Drawing.Font("Nirmala Text", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pillButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(63)))), ((int)(((byte)(115)))));
+            this.pillButton4.Location = new System.Drawing.Point(501, 274);
+            this.pillButton4.Name = "pillButton4";
+            this.pillButton4.Size = new System.Drawing.Size(251, 49);
+            this.pillButton4.TabIndex = 14;
+            this.pillButton4.Text = "Manager";
+            this.pillButton4.UseVisualStyleBackColor = false;
+            // 
+            // pillButton3
+            // 
+            this.pillButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(236)))), ((int)(((byte)(206)))));
+            this.pillButton3.FlatAppearance.BorderSize = 0;
+            this.pillButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pillButton3.Font = new System.Drawing.Font("Nirmala Text", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pillButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(63)))), ((int)(((byte)(115)))));
+            this.pillButton3.Location = new System.Drawing.Point(133, 271);
+            this.pillButton3.Name = "pillButton3";
+            this.pillButton3.Size = new System.Drawing.Size(251, 49);
+            this.pillButton3.TabIndex = 13;
+            this.pillButton3.Text = "System Admin";
+            this.pillButton3.UseVisualStyleBackColor = false;
+            this.pillButton3.Click += new System.EventHandler(this.pillButton3_Click);
+            // 
             // frmlogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -759,10 +760,11 @@
             this.ClientSize = new System.Drawing.Size(1278, 804);
             this.Controls.Add(this.sidebar);
             this.Controls.Add(this.Home);
+            this.Controls.Add(this.login);
             this.Controls.Add(this.Contact);
             this.Controls.Add(this.roles);
-            this.Controls.Add(this.login);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmlogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

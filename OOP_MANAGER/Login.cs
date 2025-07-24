@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Configuration;
 using OOP;
 using static System.Collections.Specialized.BitVector32;
+using static OOP.Profile;
 
 namespace OOP
 {
@@ -71,10 +72,19 @@ namespace OOP
             panel2.Parent = pictureBox9;
             panel2.BackColor = Color.Transparent;
 
+          
+        }
 
-            
+        private void ShowSection(Panel active)
+        {
+            Home.Visible = false;
+            Contact.Visible = false;
+            login.Visible = false;
+            roles.Visible = false;
+     
 
-
+            sidebar.Visible = true;
+            active.Visible = true;
         }
 
         private void Button_MouseEnter(object sender, EventArgs e)
@@ -103,11 +113,7 @@ namespace OOP
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Home.Visible = true;
-            sidebar.Visible = true;
-            Contact.Visible = false;
-            login.Visible = false;
-            roles.Visible = false;
+           ShowSection(Home);
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -127,38 +133,23 @@ namespace OOP
 
         private void button9_Click(object sender, EventArgs e)
         {
-            Home.Visible = true;
-            Contact.Visible = false;
-            login.Visible = false;
-            roles.Visible = false;
-            sidebar.Visible = true;
+            ShowSection(Home);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Home.Visible = false;
-            Contact.Visible = false;
-            login.Visible = false;
-            roles.Visible = true;
-            sidebar.Visible = true;
+            ShowSection(roles);
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Home.Visible = false;
-            Contact.Visible = true;
-            login.Visible = false;
-            roles.Visible = false;
-            sidebar.Visible = true;
+           ShowSection(Contact);
         }
 
         private void pillButton2_Click(object sender, EventArgs e)
         {
-            Home.Visible = false;
-            Contact.Visible = false;
-            login.Visible = true;
-            roles.Visible = false;
-            sidebar.Visible = false;
+           ShowSection(login);
+           sidebar.Visible = false; // Hide sidebar when on login page
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -200,45 +191,53 @@ namespace OOP
 
             using (SqlConnection conn = new SqlConnection(settings.ConnectionString))
             {
+
+
                 conn.Open();
+
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = conn;
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = @"SELECT UserID,RoleID FROM Users 
-                            WHERE LOWER(Username) = LOWER(@username) AND Passwords = @password";
+                cmd.CommandText = @"SELECT UserID,RoleID FROM Users WHERE LOWER(Username) = LOWER(@username) AND Passwords = @password";
+
+                cmd.CommandTimeout = 60;
 
                 cmd.Parameters.AddWithValue("@username", username);
                 cmd.Parameters.AddWithValue("@password", password);
+
+                object result = cmd.ExecuteScalar();
 
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
                     if (reader.Read())
                     {
                         string userId = reader.GetString(0);   
-                        string roleId = reader.GetString(1);   
+                        string roleId = reader.GetString(1);
 
+                        Session.Username = username;
                         Session.CurrentUserID = userId;        
 
                         this.Hide();
 
-                        // ✅ 跳转到不同窗体
+                       
                         switch (roleId)
                         {
                             case "R01":
-                                //frmAdmin adminForm = new frmAdmin();
-                                //adminForm.ShowDialog();
+                                Form1 adminForm = new Form1();
+                                adminForm.ShowDialog();
                                 break;
                             case "R02":
                                 frmM managerForm = new frmM();
                                 managerForm.ShowDialog();
                                 break;
                             case "R03":
-                                //frmChef chefForm = new frmChef();
-                                //chefForm.ShowDialog();
+                                frmChef.Username = username;
+                                frmChef chefForm = new frmChef();
+                                chefForm.ShowDialog();
                                 break;
                             case "R04":
-                                //frmCustomer customerForm = new frmCustomer();
-                                //customerForm.ShowDialog();
+                                frmCustomer customerForm = new frmCustomer();
+                                customerForm.ShowDialog();
                                 break;
                             default:
                                 MessageBox.Show("Unknown role.");
@@ -272,6 +271,11 @@ namespace OOP
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox2.PasswordChar = '\0';
         }
     }
 }

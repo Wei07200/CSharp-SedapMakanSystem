@@ -123,6 +123,16 @@ namespace OOP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Default {
+            get {
+                object obj = ResourceManager.GetObject("Default", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap filter {
             get {
                 object obj = ResourceManager.GetObject("filter", resourceCulture);
@@ -176,6 +186,16 @@ namespace OOP.Properties {
         internal static System.Drawing.Bitmap Login_ {
             get {
                 object obj = ResourceManager.GetObject("Login ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_for_buttons {
+            get {
+                object obj = ResourceManager.GetObject("Logo_for_buttons", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

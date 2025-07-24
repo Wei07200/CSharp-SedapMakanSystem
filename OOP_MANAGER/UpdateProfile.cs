@@ -20,6 +20,7 @@ namespace OOP
             connectionString = settings.ConnectionString;
         }
 
+
         // Update user profile method
         public bool UpdateUserProfile(Profile user)
         {
@@ -27,9 +28,9 @@ namespace OOP
             {
                 string query = @"UPDATE Users
                                  SET Username = @Username,
-                                     Passwords = @Passwords,
-                                     EmailAddress = @EmailAddress,
-                                     ContactNo = @ContactNo
+                                 Passwords = @Passwords,
+                                 EmailAddress = @EmailAddress,
+                                 ContactNo = @ContactNo
                                  WHERE UserID = @UserID";
 
                 SqlCommand cmd = new SqlCommand(query, conn);
